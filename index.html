@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <title>Rock-Paper-Scissors-Game</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">   
+    </head>
+    <body>        
+    
+    <main id="container">
+        
+        <h1>Basic Rock Paper Scissors game with JavaScript</h1>
+        <h2>First Score 5 Wins!</h2>
+        <div class="separe"></div>
+
+        <button id="new-game" onclick="playGame()">Play Game!</button>
+        <div id="buttons">
+            <input id="rock" class="options" type="image" src="./images/rock.jpg" width="100" value="Rock">
+            <input id="paper" class="options" type="image" src="./images/paper.jpg" width="100" value="Paper">
+            <input id="scissors" class="options" type="image" src="./images/scissors.jpg" width="100" value="Scissors">
+        </div>  
+        <div class="separe"></div>
+
+            <div class="player">            
+                 <div>
+                    <h2>Player score</h2>       
+                    <p  id="player-score">0</p>  
+                </div>
+                    
+            <div class="player">
+                    <div>
+                        <h2>Computer score</h2>
+                        <p id="computer-score">0</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="end-result">
+            <p></p>
+        </div> 
+
+        <div class="player">
+            <img id="img-play" width="100" />
+            <p id="result"></p>
+            <img id="img-comp"  width="100" />   
+        </div>
+
+        <p id="result"></p>
+            
+    </main>    
+         
+    </body>
+
+    <script src="rps-game.js"></script>
+
+</html>
+
