@@ -135,13 +135,14 @@ function checkWin() {
             display = "Game over! Computer wins the game! Try again later!";
         }    
         
-        return display;   
+        
+        return display;
+        
 }
 
-
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
-    document.getElementById("img-comp").src = `images/${computerSelection}.jpg`;  
+    document.getElementById("img-play").src = `./images/${playerSelection}.jpg`;
+    document.getElementById("img-comp").src = `./images/${computerSelection}.jpg`;  
 }
 
 
