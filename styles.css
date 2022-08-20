@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+main {
+    background-color: antiquewhite;
+    width: 500px;
+    border: 2px solid green;
+    border-radius: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#new-game {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.options {
+    background-size: cover;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    font-family: "DynaPuff";
+    font-size: 25px;
+    color: magenta;
+}
+
+h2 {
+    color: brown;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px;
+}
+
+#computer-score, #player-score {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;;
+    width: 15px;
+    height: 15px;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 25px;
+    font-family: "fantasy";
+    font-weight: bold;
+    padding: auto;
+    margin: 20px auto;
+}
+
+.player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img-play, #img-comp {
+    border-radius: 50%;
+    
+}
+
+#end-result {
+    padding-bottom: 0 50px;
+}
+
+.separe {
+    width: 500px;
+    border: 2px dashed green;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
