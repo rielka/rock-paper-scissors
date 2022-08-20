@@ -138,12 +138,12 @@ function checkWin() {
         return display;   
 }
 
-/*
+
 function updateMoves(playerSelection, computerSelection) {
     document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
     document.getElementById("img-comp").src = `images/${computerSelection}.jpg`;  
 }
-*/
+
 
 
   
