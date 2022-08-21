@@ -140,8 +140,8 @@ function checkWin() {
 
 
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `${playerSelection}.jpg`;
-    document.getElementById("img-comp").src = `${computerSelection}.jpg`; 
+    document.getElementById("img-play").src = `./${playerSelection}.jpg`;
+    document.getElementById("img-comp").src = `./${computerSelection}.jpg`; 
 }
 
 
