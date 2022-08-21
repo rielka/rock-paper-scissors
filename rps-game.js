@@ -119,29 +119,27 @@ function refresh() {
 function checkWin() {
         if (userScore === 5) {
             
-            //document.getElementById("img-play").style.display = "none";
-            //document.getElementById("img-comp").style.display = "none";
-            //document.getElementById("result").style.display = "none"; 
+            document.getElementById("img-play").style.display = "none";
+            document.getElementById("img-comp").style.display = "none";
+            document.getElementById("result").style.display = "none"; 
 
             gameOver(); 
             display = "Game over! Congratulations! You win the game!";
         }
        
         else if (computerScore === 5) {  
-            //document.getElementById("img-play").style.display = "none";
-            //document.getElementById("img-comp").style.display = "none";
-            //document.getElementById("result").style.display = "none";  
+            document.getElementById("img-play").style.display = "none";
+            document.getElementById("img-comp").style.display = "none";
+            document.getElementById("result").style.display = "none";  
             gameOver();
             display = "Game over! Computer wins the game! Try again later!";
         }    
         return display;   
 }
 
-
-
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `./${playerSelection}.jpg`;
-    document.getElementById("img-comp").src = `./${computerSelection}.jpg`; 
+    document.getElementById("img-play").src = `${playerSelection}.jpg`;
+    document.getElementById("img-comp").src = `${computerSelection}.jpg`; 
 }
 
 
