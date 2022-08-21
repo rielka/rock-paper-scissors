@@ -76,7 +76,6 @@ function getComputerChoice() {
             resultEl.style.fontFamily = "fantasy";
             resultEl.style.fontWeight = "bold"; 
             userScore++;
-
             break;
       
           case "RockPaper":
@@ -135,16 +134,14 @@ function checkWin() {
             gameOver();
             display = "Game over! Computer wins the game! Try again later!";
         }    
-        
-        
         return display;   
 }
 
 
 
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
-    document.getElementById("img-comp").src = `images/${computerSelection}.jpg`; 
+    document.getElementById("img-play").src = `${playerSelection}.jpg`;
+    document.getElementById("img-comp").src = `${computerSelection}.jpg`; 
 }
 
 
