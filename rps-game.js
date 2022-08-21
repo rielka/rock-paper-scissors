@@ -44,9 +44,7 @@ function playGame() {
             computerEl.style.fontSize = "25px";
             computerEl.style.fontFamily = "fantasy";
             computerEl.style.fontWeight = "bold"; 
-            endResultEl.textContent = checkWin();  
-            updateMoves(playerSelection, computerSelection);  
-            
+            endResultEl.textContent = checkWin();       
         });  
     }); 
 }
@@ -142,10 +140,11 @@ function checkWin() {
         return display;   
 }
 
+/*
 function updateMoves(playerSelection, computerSelection) {
     document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
     document.getElementById("img-comp").src = `images/${computerSelection}.jpg`; 
-}
+}*/
 
 
 
