@@ -45,7 +45,7 @@ function playGame() {
             computerEl.style.fontFamily = "fantasy";
             computerEl.style.fontWeight = "bold"; 
             endResultEl.textContent = checkWin();  
-            
+            updateMoves(playerSelection, computerSelection);  
             
         });  
     }); 
@@ -143,7 +143,7 @@ function checkWin() {
 }
 
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `images/${this.playerSelection}.jpg`;
+    document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
     document.getElementById("img-comp").src = `images/${computerSelection}.jpg`; 
 }
 
