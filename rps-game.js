@@ -1,7 +1,7 @@
 
 
 
-let userChoice = ["Rock", "Paper", "Scissors"];
+let userChoice = ["rock", "paper", "scissors"];
 let resultEl = document.getElementById("result");
 let userEl = document.getElementById("player-score");
 let computerEl = document.getElementById("computer-score");
@@ -20,7 +20,7 @@ function playGame() {
         option.addEventListener("click", function () {
             const playerSelection = this.value;
             
-            const cOptions = ["Rock", "Paper", "Scissors"];
+            const cOptions = ["rock", "paper", "scissors"];
             const computerSelection = cOptions[Math.floor(Math.random() * 3)];
             
             playRound(playerSelection);
@@ -66,9 +66,9 @@ function getComputerChoice() {
         let choice = playerSelection + computerSelection;
 
         switch (choice) {
-          case "RockScissors":
-          case "PaperRock":
-          case "ScissorsPaper":
+          case "rockscissors":
+          case "paperrock":
+          case "scissorspaper":
             resultEl.innerText = `${playerSelection} beats ${computerSelection}`;
             resultEl.style.fontStyle = "oblique";
             resultEl.style.color = "green";
@@ -78,9 +78,9 @@ function getComputerChoice() {
             userScore++;
             break;
       
-          case "RockPaper":
-          case "PaperScissors":
-          case "ScissorsRock":
+          case "rockpaper":
+          case "paperscissors":
+          case "scissorsrock":
             resultEl.innerText = `${computerSelection} beats ${playerSelection}`;
             resultEl.style.fontStyle = "oblique";
             resultEl.style.color = "green";
@@ -90,9 +90,9 @@ function getComputerChoice() {
             computerScore++;
             break;
       
-          case "RockRock":
-          case "PaperPaper":
-          case "ScissorsScissors":
+          case "rockrock":
+          case "paperpaper":
+          case "scissorsscissors":
             resultEl.innerText = "It\'s a tie!";
             resultEl.style.fontStyle = "oblique";
             resultEl.style.color = "green";
