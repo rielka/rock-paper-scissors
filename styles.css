@@ -9,6 +9,11 @@ main {
     margin: 50px auto;
 }
 
+#five {
+    color: blueviolet;
+    font-size: 25px;
+}
+
 #new-game {
     width: 100px;
     height: 100px;
