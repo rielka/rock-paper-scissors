@@ -143,9 +143,8 @@ function checkWin() {
 }
 
 function updateMoves(playerSelection, computerSelection) {
-    document.getElementById("img-play").src = `images/${playerSelection}.jpg`;
+    document.getElementById("img-play").src = `images/${this.playerSelection}.jpg`;
     document.getElementById("img-comp").src = `images/${computerSelection}.jpg`; 
-    document.getElementById('img-play').style.display = none; 
 }
 
 
